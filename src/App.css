@@ -15,13 +15,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+nav{
+  font-size: 1.5rem;
+  padding: 5px;
+
+}
+
+nav a{
+  margin-right: 16px;
+  color: white;
+  transition: .6s;
+}
+
+a{
+  margin-left: 10px ;
+  display: inline-flex;
 }
 
 .App-link {
@@ -35,4 +52,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.polaroid-frame{
+  border: 3px solid #61dafb;
+  width: 275px;
+  height: 330px;
+  padding: 5px 5px 15px 5px;
+  margin: 20px ;
+}
+
+.polaroid-frame img{
+  width: 100%;
+  aspect-ratio: 4/4;
+}
+
+.active-link{
+  text-decoration-color: #ff7300;
+  text-decoration-style: wavy;
+}
+
+.default-link{
+  text-decoration: none;
 }
